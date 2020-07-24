@@ -14,7 +14,6 @@ GitHub: <https://github.com/PKU-Zyf/Typora/>
 html,
 body,
 body{
-	/*background: url(https://github.com/PKU-Zyf/Typora/raw/master/pku-typora-theme-background.png);*/
 	background: url(https://s1.ax1x.com/2020/07/23/UXuXAU.png);    /*这个图床速度可能更快*/
 	background-size: cover;
 }
@@ -62,7 +61,6 @@ h2 {
 	margin: 0 0 1.9375rem;
 	padding: 0 30px;
 	text-align: center;
-	text-transform: uppercase;
 	margin-top: 3rem
 }
 h3,

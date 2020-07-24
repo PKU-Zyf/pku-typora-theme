@@ -19,6 +19,16 @@
 * Quotation Colour 引用色: “黛色” (#4a4266)
 * Font Required 所需字体: SimSun 宋体, STZHONGS 华文中宋, SimHei 黑体, SimKai 楷体, Times New Roman
 
+## Screenshots 屏幕截图
+
+![图1](https://s1.ax1x.com/2020/07/24/UjN6sO.jpg)
+
+![图2](https://s1.ax1x.com/2020/07/24/UjN2ee.jpg)
+
+![图3](https://s1.ax1x.com/2020/07/24/UjNcLD.jpg)
+
+![图4](https://s1.ax1x.com/2020/07/24/UjNyQK.jpg)
+
 ## Copyright Statement 版权声明
 
 The theme is for private use only and shall not be used for any commercial purpose. 本主题仅限私人使用，不得用于任何商业目的。
