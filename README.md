@@ -3,8 +3,12 @@
 ## Basic Information 基本信息
 
 * Peking University Typora Theme 北京大学Typora主题
-* v1.0
+* v1.1
 * Latest Update 最后更新: 2020-07-24
+
+## Update Log 更新日志
+
+* 2020-09-11 v1.1 Update background picture. 更新背景图。
 
 ## Notice 注意事项
 
