@@ -1,0 +1,327 @@
+/*---------------------------------------------------------
+北京大学Typora主题
+Peking University Typora Theme
+v1.1
+最后更新：2020-09-11
+-----------------------------------------------------------
+背景色-“牙色”：#eedeb0
+标题色-“北大红”：#94070a（参考《北大标识使用基本操作规范》）
+引用色-“黛色”：#4a4266
+所需字体：宋体、华文中宋、黑体、楷体
+GitHub: <https://github.com/PKU-Zyf/Typora/>
+---------------------------------------------------------*/
+
+html,
+body,
+body{
+	/*background: url(https://s1.ax1x.com/2020/07/23/UXuXAU.png);    /*这个图床速度可能更快*/
+	background: url(pku_1.1/pku-typora-theme-background-2.0.png);    /*存储在本地的图片*/
+	background-size: cover;
+}
+html{
+	font-size:24px;
+}
+
+#write{
+	font-family: 'Times New Roman', '宋体', Times, serif;
+	font-weight: 200;
+	text-align: justify;
+	max-width: 900px;
+}
+
+#write>h1:first-child {
+	margin-top: 2.75rem;
+}
+#write>h2:first-child {
+	margin-top: 1.75rem;
+}
+#write>h3:first-child {
+	margin-top: 1rem;
+}
+#write>h4:first-child {
+	margin-top: 0.5rem;
+}
+h1,
+h1 {
+	font-weight: bold;
+	font-family: 'Times New Roman', '华文中宋', Times, serif;
+	color: #94070a;
+	line-height: 4rem;
+	margin: 0 0 1.75rem;
+	padding: 20px 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 4rem;
+}
+h2,
+h2 {
+	font-weight: bold;
+	font-family: 'Times New Roman', '黑体', Times, serif;
+	color: #94070a;
+	line-height: 3rem;
+	margin: 0 0 1.9375rem;
+	padding: 0 30px;
+	text-align: center;
+	margin-top: 3rem
+}
+h3,
+h3 {
+	font-weight: bold;
+	font-family: 'Times New Roman', '华文中宋', Times, serif;
+	color: #94070a;
+	margin: 0 0 1.25rem;
+}
+h4,
+h4 {
+	font-weight: bold;
+	font-family: 'Times New Roman', '黑体', Times, serif;
+	color: #94070a;
+	margin: 0 0 1.25rem;
+}
+h5,
+h5 {
+	font-size: 1.125rem;
+	font-family: 'Times New Roman', '楷体', Times, serif;
+	color: #94070a;
+	font-weight: bold;
+	margin: 0 0 1.25rem;
+}
+h6,
+h6 {
+	font-size: 1rem;
+	font-family: 'Times New Roman', '楷体', Times, serif;
+	color: #94070a;
+	font-weight: normal;
+	margin: 0 0 1.25rem;
+}
+p {
+	color: #000000;
+	font-size: 1rem;
+	line-height: 1.75rem;
+	margin: 0 0 1.25rem;
+}
+#write>h3.md-focus:before {
+	left: -1.875rem;
+	top: 0.5rem;
+	padding: 2px;
+}
+#write>h4.md-focus:before {
+	left: -1.875rem;
+	top: 0.3125rem;
+	padding: 2px;
+}
+#write>h5.md-focus:before {
+	left: -1.875rem;
+	top: 0.25rem;
+	padding: 2px;
+}
+#write>h6.md-focus:before {
+	left: -1.875rem;
+	top: .125rem;
+	padding: 2px;
+}
+
+@media screen and (max-width: 48em) {
+	blockquote {
+		margin-left: 1rem;
+		margin-right: 0;
+		padding: 0.5em;
+	}
+	.h1,
+	h1 {
+		font-size: 2.827rem;
+	}
+	.h2,
+	h2 {
+		font-size: 1.999rem;
+	}
+	.h3,
+	h3 {
+		font-size: 1.413rem;
+	}
+	.h4,
+	h4 {
+		font-size: 1.250rem;
+	}
+	.h5,
+	h5 {
+		font-size: 1.150rem;
+	}
+	.h6,
+	h6 {
+		font-size: 1rem;
+	}
+}
+a,
+.md-def-url {
+	color: #94070a;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+table {
+	margin-bottom: 20px
+}
+table td {
+	padding: 8px;
+	line-height: 1.25rem;
+	vertical-align: top;
+	border-top: 1px solid #94070a
+}
+table th {
+	padding: 8px;
+	font-weight: bold
+}
+table thead th {
+	vertical-align: bottom
+}
+table caption+thead tr:first-child th,
+table caption+thead tr:first-child td,
+table colgroup+thead tr:first-child th,
+table colgroup+thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+	border-top: 0
+}
+table tbody+tbody {
+	border-top: 2px solid #94070a
+}
+code, .md-fences {
+	padding: .5em;
+	background: #f0f0f0;
+	border: 1px solid #94070a;
+	font-family: 'Consolas', '黑体', monospace;
+	padding: .1em;
+	font-size: 0.9em;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+.md-fences {
+	margin: 0 0 20px;
+	font-size: 1em;
+	padding: 0.3em 1em;
+  	padding-top: 0.4em;
+}
+.task-list{
+	padding-left: 0;
+}
+
+.task-list-item {
+	padding-left:2.125rem;
+}
+
+.task-list-item input {
+	top: 3px;
+
+}
+
+.task-list-item input:before {
+	content: "";
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	vertical-align: middle;
+	text-align: center;
+	border: 1px solid gray;
+	background-color: #fdfdfd;
+	margin-left: 0;
+	margin-top: -0.5rem;
+}
+.task-list-item input:checked:before,
+.task-list-item input[checked]:before{
+	content: '\25FC';
+	/*◘*/
+	font-size: 0.8125rem;
+	line-height: 0.9375rem;
+	margin-top: -1rem;
+}
+
+/* Chrome 29+ */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) {
+    .task-list-item input:before {
+    	margin-top: -0.2rem;
+    }
+
+    .task-list-item input:checked:before,
+	.task-list-item input[checked]:before {
+		margin-top: -0.2rem;
+	}
+}
+
+blockquote {
+	margin: 0 0 1.11111rem;
+	padding: 0.5rem 1.11111rem 0 1.05556rem;
+	border-left: 2px solid #94070a;
+}
+blockquote,
+blockquote p {
+	line-height: 1.6;
+	font-family: 'Times New Roman', '楷体', Times, serif;
+	color: #4a4266;
+}
+#write pre.md-meta-block {
+	min-height: 30px;
+	background: #f8f8f8;
+	padding: 1.5em;
+	font-weight: 300;
+	font-size: 1em;
+	padding-bottom: 1.5em;
+	padding-top: 3em;
+    margin-top: -1.5em;
+	color: #999;
+	border-left: 1000px #f8f8f8 solid;
+	margin-left: -1000px;
+	border-right: 1000px #f8f8f8 solid;
+	margin-right: -1000px;
+	margin-bottom: 2em;
+}
+.MathJax_Display {
+	font-size: 0.9em;
+	margin-top: 0.5em;
+	margin-bottom: 0;
+}
+p.mathjax-block,
+.mathjax-block {
+	padding-bottom: 0;
+}
+.mathjax-block>.code-tooltip {
+	bottom: 5px;
+	box-shadow: none;
+}
+.md-image>.md-meta {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+.md-image>img {
+	margin-top: 2px;
+}
+.md-image>.md-meta:first-of-type:before {
+	padding-left: 4px;
+}
+
+#typora-source {
+	color: #555;
+}
+
+/** ui for windows **/
+#md-searchpanel {
+    border-bottom: 1px solid #94070a;
+}
+
+#md-searchpanel .btn {
+    border: 1px solid #94070a;
+}
+
+#md-notification:before {
+	top: 14px;
+}
+
+#md-notification {
+	background: #eee;
+}
+
+.megamenu-menu-panel .btn {
+	border: 1px solid #94070a;
+}
