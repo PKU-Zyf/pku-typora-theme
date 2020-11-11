@@ -3,6 +3,7 @@
 ## Basic Information 基本信息
 
 * Peking University Typora Theme 北京大学Typora主题
+* Author 作者: z.yf@pku.edu.cn
 * v1.1
 * Latest Update 最后更新: 2020-09-11
 
