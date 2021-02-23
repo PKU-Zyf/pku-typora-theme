@@ -9,7 +9,7 @@
 
 ## Update Log 更新日志
 
-* 2020-09-11 (v1.1) Update background picture. 更新背景图。
+* 2020-09-11 (v1.1) Update the background picture. 更新背景图。
 * 2021-02-23 (v1.3) Update font families so that the fonts can be displayed without being installed before. 更新字体族，无需事先安装即可显示字体。
 
 ## Notice 注意事项
