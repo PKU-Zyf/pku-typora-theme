@@ -9,9 +9,16 @@
 
 ## Update Log 更新日志
 
-* 2020-09-11 (v1.1) Update the background picture. 更新背景图。
-* 2021-02-23 (v1.3) Update font families so that the fonts can be displayed without being installed before. 更新字体族，无需事先安装即可显示字体。The 1.2 version has not been uploaded as it is for internal testing. 1.2版为内部测试版，未上传。
-* 2021-09-01 (v2.0) Re-modified based on theme “Whitey”. 以“Whitey”主题为基础重新设计。Optimize the rendering effect of task lists. 优化任务清单渲染效果。Optimize the rendering effect of quotation marks and dash in Chinese. 优化中文引号和破折号渲染效果。
+* 2020-09-11 (v1.1):
+  * Update the background picture. 更新背景图。
+* 2021-02-23 (v1.3):
+  * Update font families so that the fonts can be displayed without being installed before. 更新字体族，无需事先安装即可显示字体。
+  * The 1.2 version has not been uploaded as it is for internal testing. 1.2版为内部测试版，未上传。
+* 2021-09-01 (v2.0):
+  * Re-modified based on theme “Whitey”. 以“Whitey”主题为基础重新设计。
+  * Optimize the rendering effect of task lists. 优化任务清单渲染效果。
+  * Optimize the rendering effect of quotation marks and dash in Chinese. 优化中文引号和破折号渲染效果。
+  * The rendering problem of multi-level lists has been completely solved. 彻底解决多级列表的渲染问题。
 
 ## Notice 注意事项
 
