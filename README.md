@@ -18,13 +18,10 @@
   * Re-modified based on theme “Whitey”. 以“Whitey”主题为基础重新设计。
   * Optimize the rendering effect of task lists. 优化任务清单渲染效果。
   * Optimize the rendering effect of quotation marks and dash in Chinese. 优化中文引号和破折号渲染效果。
-  * The rendering problem of multi-level lists has been completely solved. 彻底解决多级列表的渲染问题。
+  * The problem of rendering multi-level lists has been completely solved. 彻底解决多级列表的渲染问题。
+  * The problem of exporting PDF files has been solved. 解决导出PDF问题。
 
 ## Notice 注意事项
 
 * Designed and tested on Windows. Not fully tested, but should work for macOS/Linux. This theme includes styles for Windows “unibody” style. 本主题在Windows系统上设计、调试，未在其他系统上调试，但应能在macOS/Linux系统上正常运行。支持Windows“一体化”模式。
-* Recognized as a dark theme, the theme may have problems when you try to export a PDF file. You may export an HTML file first and then convert it into PDF format with your browser. 导出PDF时可能会提示“深色主题无法导出”，可先转为HTML格式，再用浏览器导出PDF文件。
-
-## Copyright Statement 版权声明
-
-The theme is for private use only and shall not be used for any commercial purpose. 本主题仅限私人使用，不得用于任何商业目的。
+* The theme is for private use only and shall not be used for any commercial purpose. 本主题仅限私人使用，不得用于任何商业目的。
