@@ -23,6 +23,7 @@
 * (v2.1):
   * Optimize the margin of multi-level lists. 优化多级列表的外边距。
   * Optimize the rendering effect of the dot in Chinese. 优化中文点号的渲染效果。
+  * Optimize the padding-left of blockquotes to ensure that a quoted paragraph and a normal paragraph is properly justified. 优化引用块的左边距，保证引用文字和正文对齐。
 
 ## Notice 注意事项
 
