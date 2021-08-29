@@ -1,10 +1,10 @@
-# pku_2.0
+# pku_2.1
 
 ## Basic Information 基本信息
 
 * Peking University Typora Theme 北京大学Typora主题
 * Author 作者: z.yf@pku.edu.cn
-* v2.0
+* v2.1
 * Latest Update 最后更新: 2021-08-26
 
 ## Update Log 更新日志
@@ -17,9 +17,12 @@
 * 2021-08-26 (v2.0):
   * Re-modified based on theme “Whitey”. 以“Whitey”主题为基础重新设计。
   * Optimize the rendering effect of task lists. 优化任务清单渲染效果。
-  * Optimize the rendering effect of quotation marks and dash in Chinese. 优化中文引号和破折号渲染效果。
+  * Optimize the rendering effect of the quotation marks and the dash in Chinese. 优化中文引号和破折号渲染效果。
   * The problem of rendering multi-level lists has been completely solved. 彻底解决多级列表的渲染问题。
   * The problem of exporting PDF files has been solved. 解决导出PDF问题。
+* (v2.1):
+  * Optimize the margin of multi-level lists. 优化多级列表的外边距。
+  * Optimize the rendering effect of the dot in Chinese. 优化中文点号的渲染效果。
 
 ## Notice 注意事项
 
