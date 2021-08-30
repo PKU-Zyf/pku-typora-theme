@@ -24,7 +24,7 @@
   * Optimize the margin of multi-level lists. 优化多级列表的外边距。
   * Optimize the rendering effect of the dot in Chinese. 优化中文点号的渲染效果。
   * Optimize the padding-left of blockquotes to ensure that a quoted paragraph and a normal paragraph is properly justified. 优化引用块的左边距，保证引用文字和正文对齐。
-  * The style of the catalog has been improved. 改进目录的样式。
+  * The style of the catalog has been significantly improved. 大幅改进目录的样式。
 
 ## Notice 注意事项
 
