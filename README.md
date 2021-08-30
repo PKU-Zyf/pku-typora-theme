@@ -2,13 +2,13 @@
 
 ## Basic Information 基本信息
 
-* Peking University Typora Theme 北京大学Typora主题
+* PKU Typora Theme 北大风Typora主题
 * Author 作者: z.yf@pku.edu.cn
-* v2.1
-* Latest Update 最后更新: 2021-08-30
 
 ## Update Log 更新日志
 
+* 2020-07-24 (v1.0):
+  * The first version of PKU Typora theme. 初版PKU Typora主题。
 * 2020-09-11 (v1.1):
   * Update the background picture. 更新背景图。
 * 2021-02-23 (v1.3):
