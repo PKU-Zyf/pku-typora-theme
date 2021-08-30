@@ -1,0 +1,496 @@
+/*---------------------------------------------------------
+北京大学Typora主题
+Peking University Typora Theme
+v2.1
+作者：z.yf@pku.edu.cn
+最后更新：2021-08-26
+GitHub: <https://github.com/PKU-Zyf/Typora/>
+---------------------------------------------------------*/
+
+:root {
+	--pku-red: #94070a;    /* 主题色-“北大红”：#94070a（参考《北大标识使用基本操作规范》） */
+	--background-color: #f3f2ee;    /* 背景色：#f3f2ee，与“newsprint”主题相同 */
+	--special-color: #87674f;    /* 特殊色-“专色金”：Pantone 875C（参考《北大标识使用基本操作规范》），色值见https://www.pantone.com/color-finder/875-C */
+	--spare-color: #8a8d8f;    /* 备用色-“专色银”：Pantone 877C（参考《北大标识使用基本操作规范》），色值见https://www.pantone.com/color-finder/877-C */
+}
+
+/* 设置字体族 */
+
+@font-face{
+	font-family: "Default CJK Font";
+	font-style: normal;
+    font-weight: normal;
+	src: url(pku_2.1/FZSSK.TTF);
+}
+
+@font-face {
+    font-family: "Default CJK Font";
+    font-style: normal;
+    font-weight: bold;
+    src: url(pku_2.1/FZHT_Document.TTF);
+}
+
+@font-face {
+	font-family: "Special Characters";    /* 对双引号、单引号、破折号、圆点特殊处理 */
+	font-style: normal;
+    font-weight: normal;
+	src: url(pku_2.1/FZSSK.TTF);
+	unicode-range: U+2018, U+2019, U+201c, U+201d, U+2014, U+00B7;
+}
+
+@font-face {
+	font-family: "Special Characters";    /* 对双引号、单引号、破折号、圆点特殊处理 */
+	font-style: normal;
+    font-weight: bold;
+	src: url(pku_2.1/FZHT_Document.TTF);
+	unicode-range: U+2018, U+2019, U+201c, U+201d, U+2014, U+00B7;
+}
+
+@font-face{
+	font-family: "CJK Citation Font";
+	font-style: normal;
+    font-weight: normal;
+	src: url(pku_2.1/FZKTK.TTF);
+}
+
+@font-face {
+    font-family: "CJK Citation Font";
+    font-style: normal;
+    font-weight: bold;
+    src: url(pku_2.1/FZHT_Document.TTF);
+}
+
+html {
+	font-size: 18px;
+}
+
+html, body {
+	/*margin: auto;*/
+	background: var(--background-color);
+	-webkit-font-smoothing: antialiased;
+}
+body {
+	font-family: "Special Characters", "Garamond", "Default CJK Font", Times;
+	color: #000000;
+	line-height: 1.75;    /* 调整（段内）行距 */
+	text-align: justify;
+}
+
+#write {
+	max-width: 960px;
+	margin: 0 auto;
+	line-height: 1.75;    /* 调整（段内）行距 */
+	padding-top: 0;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1100px;
+	}
+}
+
+/* 输出PDF的设置
+-------------------------------------------------------- */
+
+@page {
+	size: A4;
+}
+
+@media print {
+	html {
+		font-size: 12pt;    /* 小四号字体。打印时使用磅（pt）作为单位比较合适 */
+	}
+}
+
+/* Typography
+-------------------------------------------------------- */
+
+#write>h1:first-child,
+h1 {
+	padding-top: 2em;
+	font-weight: bold;
+	color: var(--pku-red);
+}
+
+h1 {
+	font-size:2rem;
+}
+
+h2 {
+	margin-top:2em;
+	font-size: 1.9rem;
+	font-weight: bold;
+	color: var(--pku-red);
+}
+
+h3 {
+	font-weight: bold;
+	font-style: normal;
+	margin-top: 3em;
+	color: var(--pku-red);
+}
+
+h4 {
+	color: var(--pku-red);
+}
+
+h1, 
+h2, 
+h3{
+	text-align: center;
+}
+
+h2:after{
+	border-bottom: 2px solid #000000;
+    content: '';
+    width: 200px;
+    display: block;
+    margin: 0 auto 1em;
+    height: 1px;
+}
+
+h1+h2, h2+h3 {
+	margin-top: 1.2em;    /* 两级标题连用时的间距 */
+}
+
+p {
+	margin: .25em auto;    /* 正文段间距 */
+}
+
+p,
+.mathjax-block {
+	margin-top: 0;
+	-webkit-hypens: auto;
+	-moz-hypens: auto;
+	hyphens: auto;
+}
+
+/* 无序列表和有序列表的样式设置
+-------------------------------------------------------- */
+
+ul {
+	list-style: disc;    /* 实心圆 */
+	padding-left: 1.2em;
+	margin: .75em 0;
+}
+
+ol {
+	padding-left: 1.2em;
+	margin: .75em 0;
+}
+
+li {
+	margin: 0;
+}
+
+/*---
+这是一个相当神奇的bug：
+Typora默认编辑界面渲染列表时，会将多级列表的每一级的文字都包裹一个<p>标签。
+而当导出html或PDF等格式时，n级列表的第n级（包括n=1的情况）文字却会“裸露”，未被<p>标签包裹。
+同时，列表中更高级别的文字仍然会被<p>标签包裹。
+这就导致多级列表最后一级的格式和其他级别不一致，影响美观。
+为此，考虑指定li>p标签的格式，使其与li标签的格式一致。
+这样，无论是列表的最低一级文字（未被<p>标签包裹的）还是更高级别的文字（被<p>标签包裹的），都将拥有相同的格式。
+---*/
+
+li>p {
+	margin: 0;
+}
+
+/* 对次级及以下的（有序或无序）列表，取消其上下外边距，取消其左内边距 */
+
+li>ul {
+	list-style: disc;
+	padding-left: 0;
+	margin: 0;
+}
+
+li>ol {
+	padding-left: 0;
+	margin: 0;
+}
+
+/* 引用块的样式设置
+-------------------------------------------------------- */
+
+blockquote {
+	margin: 1em 0 1em 1em;
+	padding-left: calc(1em - 2px);    /* 这样可以抵消掉border的宽度，使得引文的字和正文完全对齐 */
+	border-left: 2px solid var(--special-color);
+}
+
+blockquote,
+blockquote p {
+	font-family: "Special Characters", "Garamond", "CJK Citation Font", Times;
+	color: var(--citation-color);
+}
+
+code,
+pre {
+	font-family: "Consolas", "Menlo", "Monaco", monospace, serif;
+	font-size: .9em;
+	background: white;
+}
+.md-fences{
+	margin-left: 1em;
+	padding-left: 1em;
+	border: 1px solid var(--special-color);
+	padding-bottom: 8px;
+	padding-top: 6px;
+	margin-bottom: 1.5em;
+	line-height: 1.5;
+}
+
+/* 超链接的样式设置
+-------------------------------------------------------- */
+
+a {
+	color: var(--pku-red);
+	text-decoration: none;
+}
+
+/* 鼠标悬停的超链接 */
+
+a:hover {
+	text-decoration: underline;
+}
+
+.md-toc::before {   /* 加上伪类，在目录内容前面加上“目录”两个字，格式与二级标题同 */
+	content: "目录";
+	display: block;
+	font-weight: bold;
+	font-size: 1.9rem;
+	color: var(--pku-red);
+	display: block;
+	width: 100%;
+	text-align: center;    /* 配合100%的宽度，强行使其居中 */
+}
+
+a img {
+	border: none;
+}
+
+/* 目录的样式设置
+-------------------------------------------------------- */
+
+.md-toc {
+	margin-top: 40px;
+}
+
+.md-toc-content {   /* 设置目录正文样式 */
+	font-size: 1rem;
+	padding-bottom: 20px;
+}
+
+.md-toc-h1 {    /* 设置一级标题不显示在目录里 */
+	display: none;
+}
+.md-toc-h2 {    /* 设置目录里的二级标题样式 */
+	font-weight: bold;
+	text-decoration: underline;
+}
+.md-toc-h3 {    /* 设置目录里的三级标题样式 */
+	font-weight: bold;
+}
+
+h1 a,
+h1 a:hover {
+	color: #333;
+	text-decoration: none;
+}
+hr {
+	color: #ddd;
+	height: 1px;
+	margin: 2em 0;
+	border-top: solid 1px #ddd;
+	border-bottom: none;
+	border-left: 0;
+	border-right: 0;
+}
+.ty-table-edit {
+	background: #ededed;
+    padding-top: 4px;
+}
+table {
+	margin-bottom: 1.333333rem
+}
+table th,
+table td {
+	padding: 8px;
+	line-height: 1.333333rem;
+	vertical-align: top;
+	border-top: 1px solid var(--spare-color)
+}
+table th {
+	font-weight: bold
+}
+table thead th {
+	vertical-align: bottom
+}
+table caption+thead tr:first-child th,
+table caption+thead tr:first-child td,
+table colgroup+thead tr:first-child th,
+table colgroup+thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+	border-top: 0
+}
+table tbody+tbody {
+	border-top: 2px solid var(--pku-red)
+}
+
+.md-tag {
+	color: inherit;
+	font: inherit;
+}
+#write pre.md-meta-block {
+	min-height: 35px;
+	padding: 0.5em 1em;
+}
+#write pre.md-meta-block {
+	white-space: pre;
+	background: #f8f8f8;
+	border: 0px;
+	color: #999;
+	
+	width: 100vw;
+	max-width: calc(100% + 60px);
+	margin-left: -30px;
+	border-left: 30px #f8f8f8 solid;
+	border-right: 30px #f8f8f8 solid;
+
+	margin-bottom: 2em;
+	margin-top: -1.3333333333333rem;
+	padding-top: 26px;
+	padding-bottom: 10px;
+	line-height: 1.8em;
+	font-size: 0.9em;
+	font-size: 0.76em;
+	padding-left: 0;
+}
+.md-img-error.md-image>.md-meta{
+	vertical-align: bottom;
+}
+#write>h5.md-focus:before {
+	top: 2px;
+}
+
+.outline-expander:before {
+	color: inherit;
+	font-size: 14px;
+	top: auto;
+	content: "\f0da";
+	font-family: FontAwesome;
+}
+
+.outline-expander:hover:before,
+.outline-item-open>.outline-item>.outline-expander:before {
+  	content: "\f0d7";
+}
+
+/** source code mode */
+#typora-source {
+	font-family: Courier, monospace;
+    color: black;
+}
+
+.html-for-mac #typora-sidebar {
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.cm-s-typora-default .cm-header, 
+.cm-s-typora-default .cm-property,
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+	color: #428bca;
+}
+
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number {
+	color: #777777;
+}
+
+.typora-node .file-list-item-parent-loc, 
+.typora-node .file-list-item-time, 
+.typora-node .file-list-item-summary {
+	font-family: arial, sans-serif;
+}
+
+.md-mathjax-midline {
+	background: #fafafa;
+}
+
+.md-fences .code-tooltip {
+	bottom: -2em !important;
+}
+
+.dropdown-menu .divider {
+	border-color: #e5e5e5;
+}
+
+/* task list 和 checked box 效果设置 */
+
+sup.task-list {
+    list-style: none !important;
+}
+
+.task-list-item input {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: block;
+    -webkit-appearance: initial;
+	background: var(--background-color);
+    left: -18px;
+}
+
+.task-list-item input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.task-list-item input:before {
+    border: 2px solid var(--special-color);
+    border-radius: 1.2rem;    /* 角半径 */
+    width: 1.2rem;
+    height: 1.2rem;
+    content: ' ';
+    transition: background-color 200ms ease-in-out;
+    display: block;
+}
+
+.task-list-item input:checked:before,
+.task-list-item input[checked]:before {
+    -webkit-appearance: initial;
+    background: var(--special-color);
+    border-width: 2px;
+    display: inline-block;
+    transition: background-color 200ms ease-in-out;
+}
+
+.task-list-item input:checked:after,
+.task-list-item input[checked]:after {
+    opacity: 1;
+}
+
+.task-list-item input:after {    /* 圈圈里面的小勾 */
+    opacity: 1;
+    -webkit-transition: opacity 0.05s ease-in-out;
+    -moz-transition: opacity 0.05s ease-in-out;
+    transition: opacity 0.05s ease-in-out;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0.325rem;
+    left: 0.28125rem;
+    width: 0.6375rem;
+    height: 0.4rem;
+    border: 3px solid var(--background-color);
+    border-top: 0;
+    border-right: 0;
+    content: ' ';
+    opacity: 0;
+}
+
+.task-list-done {
+    text-decoration: line-through;
+}
