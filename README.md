@@ -2,7 +2,7 @@
 
 ## Basic Information 基本信息
 
-* PKU Typora Theme 北大风格Typora主题
+* A Typora theme in Peking University style. 北大风格Typora主题
 * Author 作者: z.yf@pku.edu.cn
 
 ## Update Log 更新日志
