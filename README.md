@@ -6,7 +6,7 @@
 * Copyright 2020-2022 Yifan Zhang (z.yf@pku.edu.cn).
 * Acknowledgement 致谢: Cjq.
 
-## 使用说明 Instructions
+## Instructions 使用说明
 
 * Please copy all the css files in master directory and “pku_2.2” folder to the default theme folder of Typora, and then restart Typora. 请将master目录下的所有css文件和「pku_2.2」文件夹全部复制到Typora默认的主题文件夹「themes」中，重启Typora即可使用。
 * You can open the theme folder directly through “File - Preferences - Appearance - Themes - Open Theme Folder” (Classic style) or "Menu - Themes - Open Theme Folder" (Unibody style).可通过「文件-偏好设置-外观-主题-打开主题文件夹」（经典样式）或「菜单-主题-打开主题文件夹」（「一体化」模式），直接打开「theme」文件夹。
