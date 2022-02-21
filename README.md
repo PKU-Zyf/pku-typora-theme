@@ -1,19 +1,25 @@
-# pku_2.1
+# pku_2.2
 
 ## Basic Information 基本信息
 
-* A Typora theme in Peking University style. 北大风格Typora主题
-* Copyright 2020-2022 Yifan Zhang (z.yf@pku.edu.cn)
+* A Typora theme in Peking University style. 北大风格Typora主题。
+* Copyright 2020-2022 Yifan Zhang (z.yf@pku.edu.cn).
+* Acknowledgement 致谢: Cjq.
 
 ## Update Log 更新日志
 
+* 2022-02-22 (v2.2):
+  * Add more special characters to be displayed with full width. 增加更多全角显示的标点符号。
+  * Optimize the effect of printing. 优化打印效果。
+  * Modify the alignment of h3 headings. 修改三级标题对齐方式。
+  * Provide different versions for Chinese/Japanese input or mixed Chinese/Japanese and Western input (pku_2.2_cj.css) and pure Western input (pku_2.2_w.css) to guarantee the rendering effect. 为中文/日文输入或中文、日文与西文的混合输入（pku_2.2_cj.css）和纯西文输入（pku_2.2_w.css）提供不同的版本，保证渲染效果。
 * 2021-08-30 (v2.1):
   * Optimize the margin of multi-level lists. 优化多级列表的外边距。
   * Optimize the rendering effect of the dot in Chinese. 优化中文圆点号的渲染效果。
   * Optimize the padding-left of blockquotes to ensure that a quoted paragraph and a normal paragraph is properly justified. 优化引用块的左边距，保证引用文字和正文对齐。
   * The style of the catalog has been significantly improved. 大幅改进目录的样式。
 * 2021-08-26 (v2.0):
-  * Re-modified based on theme “Whitey”. 以“Whitey”主题为基础重新设计。
+  * Re-modify based on theme “Whitey”. 以“Whitey”主题为基础重新设计。
   * Optimize the rendering effect of task lists. 优化任务清单渲染效果。
   * Optimize the rendering effect of the quotation marks and the dash in Chinese. 优化中文引号和破折号渲染效果。
   * The problem of rendering multi-level lists has been completely solved. 彻底解决多级列表的渲染问题。
