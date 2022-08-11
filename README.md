@@ -4,13 +4,13 @@
 
 * A Typora theme in Peking University style. 北大风格Typora主题。
 * Copyright 2020-2022 Yifan Zhang (z.yf@pku.edu.cn).
-* Acknowledgement 致谢: Cjq.
+* Acknowledgement: Jiaqi Chen; Xinyang Gao. 致谢: 陈家琪，高昕阳。
 
 ## Instructions 使用说明
 
 * Please copy all the css files in master directory and “pku_2.2” folder to the default theme folder of Typora, and then restart Typora. 请将master目录下的所有css文件和「pku_2.2」文件夹全部复制到Typora默认的主题文件夹「themes」中，重启Typora即可使用。
-* You can open the theme folder directly through “File - Preferences - Appearance - Themes - Open Theme Folder” (Classic style) or "Menu - Themes - Open Theme Folder" (Unibody style).可通过「文件-偏好设置-外观-主题-打开主题文件夹」（经典样式）或「菜单-主题-打开主题文件夹」（「一体化」模式），直接打开「theme」文件夹。
-* Be sure to turn on the “Preferences - Markdown - Whitespace / Line Break - Indent first line of paragraphs”, otherwise it will affect the rendering effect of lists.使用时请务必开启「偏好设置-Markdown-空格与换行-首行缩进」选项，否则会影响列表的渲染效果。
+* You can open the theme folder directly through “File - Preferences - Appearance - Themes - Open Theme Folder” (Classic style) or "Menu - Themes - Open Theme Folder" (Unibody style). 可通过「文件-偏好设置-外观-主题-打开主题文件夹」（经典样式）或「菜单-主题-打开主题文件夹」（「一体化」模式），直接打开「theme」文件夹。
+* Be sure to turn on the “Preferences - Markdown - Whitespace / Line Break - Indent first line of paragraphs”, otherwise it will affect the rendering effect of lists. 使用时请务必开启「偏好设置-Markdown-空格与换行-首行缩进」选项，否则会影响列表的渲染效果。
 * The theme with the suffix “cj” is for Chinese/Japanese, and the theme with the suffix “w” is for Western. For mixed input, the former is recommended for Chinese-dominated text and the latter for Western-dominated text. 后缀为「cj」的主题用于中文/日文，后缀为「w」的主题用于西文。中/日文和西文混合输入，中文为主的建议使用前者，西文为主的建议使用后者。
 
 ## Update Log 更新日志
