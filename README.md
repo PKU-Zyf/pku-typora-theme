@@ -16,6 +16,10 @@
 
 ## Update Log 更新日志
 
+* 2023-03-15 (v2.4):
+  * Optimize the style of blockquotes and h2 when outputting in PDF format. 优化了输出PDF的引用框和二级标题样式。
+  * Add transparent image borders. 增加了透明的图片边框。
+  
 * 2022-08-11 (v2.3):
   * Redesign the logic of font rendering. 重新设计字体渲染逻辑。
   * Use open source font “EB Garamond” as Western font. 西文字体使用开源的“EB Garamond”。

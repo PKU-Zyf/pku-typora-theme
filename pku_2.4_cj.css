@@ -1,15 +1,10 @@
 /*---------------------------------------------------------
-北大风格Typora主题
+北大风格 Typora 主题
 Peking University Typora Theme
-v2.3
+v2.4
 作者：z.yf@pku.edu.cn
-最后更新：2022-08-11
+最后更新：2023-03-15
 GitHub: <https://github.com/pku-zyf/pku-typora-theme/>
-
-更新日志：
-- 重新设计字体渲染逻辑。
-- 西文字体使用开源的“EB Garamond”。
-- 不建议对中文/日文使用「粗斜体」（Bold Italic）。
 ---------------------------------------------------------*/
 
 :root {
@@ -25,85 +20,85 @@ GitHub: <https://github.com/pku-zyf/pku-typora-theme/>
     font-family: "Default CJ Font";
     font-style: normal;
     font-weight: normal;
-    src: url(pku_2.3/FZSSK.TTF);
+    src: url(pku_2.4/FZSSK.TTF);
 }
 @font-face {
     font-family: "Default CJ Font";
     font-style: normal;
     font-weight: bold;
-    src: url(pku_2.3/FZHT_Document.TTF);
+    src: url(pku_2.4/FZHT_Document.TTF);
 }
 @font-face {
     font-family: "Default CJ Font";
     font-style: italic;
     font-weight: normal;
-    src: url(pku_2.3/FZKTK.TTF);
+    src: url(pku_2.4/FZKTK.TTF);
 }
 @font-face {
     font-family: "Default CJ Font";
     font-style: italic;
     font-weight: bold;
-    src: url(pku_2.3/FZKTK.TTF);    /* 有待改进 */
+    src: url(pku_2.4/FZKTK.TTF);    /* 有待改进 */
 }
 @font-face {
     font-family: "Special Characters";    /* 对双引号、单引号、破折号、圆点等特殊处理 */
     font-style: normal;
     font-weight: normal;
-    src: url(pku_2.3/FZSSK.TTF);
+    src: url(pku_2.4/FZSSK.TTF);
     unicode-range: U+2018, U+2019, U+201c, U+201d, U+2014, U+2026, U+00B7, U+002D, U+300A;
 }
 @font-face {
     font-family: "Special Characters";    /* 对双引号、单引号、破折号、圆点等特殊处理 */
     font-style: normal;
     font-weight: bold;
-    src: url(pku_2.3/FZHT_Document.TTF);
+    src: url(pku_2.4/FZHT_Document.TTF);
     unicode-range: U+2018, U+2019, U+201c, U+201d, U+2014, U+2026, U+00B7, U+002D, U+300A;
 }
 @font-face {
     font-family: "Special Characters";    /* 对双引号、单引号、破折号、圆点等特殊处理 */
     font-style: italic;
     font-weight: normal;
-    src: url(pku_2.3/FZKTK.TTF);
+    src: url(pku_2.4/FZKTK.TTF);
     unicode-range: U+2018, U+2019, U+201c, U+201d, U+2014, U+2026, U+00B7, U+002D, U+300A;
 }
 @font-face{
     font-family: "CJ Citation Font";
     font-style: normal;
     font-weight: normal;
-    src: url(pku_2.3/FZKTK.TTF);
+    src: url(pku_2.4/FZKTK.TTF);
 }
 @font-face {
     font-family: "CJ Citation Font";
     font-style: normal;
     font-weight: bold;
-    src: url(pku_2.3/FZHT_Document.TTF);
+    src: url(pku_2.4/FZHT_Document.TTF);
 }
 @font-face{
     font-family: "W Font";
     font-style: normal;
     font-weight: normal;
-    src: url(pku_2.3/EBGaramond-Regular.ttf);
+    src: url(pku_2.4/EBGaramond-Regular.ttf);
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; /* 参照“github.css” */
 }
 @font-face{
     font-family: "W Font";
     font-style: italic;
     font-weight: normal;
-    src: url(pku_2.3/EBGaramond-Italic.ttf);
+    src: url(pku_2.4/EBGaramond-Italic.ttf);
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; /* 参照“github.css” */
 }
 @font-face{
     font-family: "W Font";
     font-style: normal;
     font-weight: bold;
-    src: url(pku_2.3/EBGaramond-Bold.ttf);
+    src: url(pku_2.4/EBGaramond-Bold.ttf);
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; /* 参照“github.css” */
 }
 @font-face{
     font-family: "W Font";
     font-style: italic;
     font-weight: bold;
-    src: url(pku_2.3/EBGaramond-BoldItalic.ttf);
+    src: url(pku_2.4/EBGaramond-BoldItalic.ttf);
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; /* 参照“github.css” */
 }
 
@@ -111,25 +106,25 @@ GitHub: <https://github.com/pku-zyf/pku-typora-theme/>
     font-family: "Only W Font";
     font-style: normal;
     font-weight: normal;
-    src: url(pku_2.3/EBGaramond-Regular.ttf);
+    src: url(pku_2.4/EBGaramond-Regular.ttf);
 }
 @font-face{
     font-family: "Only W Font";
     font-style: italic;
     font-weight: normal;
-    src: url(pku_2.3/EBGaramond-Italic.ttf);
+    src: url(pku_2.4/EBGaramond-Italic.ttf);
 }
 @font-face{
     font-family: "Only W Font";
     font-style: normal;
     font-weight: bold;
-    src: url(pku_2.3/EBGaramond-Bold.ttf);
+    src: url(pku_2.4/EBGaramond-Bold.ttf);
 }
 @font-face{
     font-family: "Only W Font";
     font-style: italic;
     font-weight: bold;
-    src: url(pku_2.3/EBGaramond-BoldItalic.ttf);
+    src: url(pku_2.4/EBGaramond-BoldItalic.ttf);
 }
 
 html {
@@ -188,19 +183,6 @@ blockquote p {
 @media only screen and (min-width: 1400px) {
     #write {
         max-width: 1100px;
-    }
-}
-
-/* 输出PDF的设置
--------------------------------------------------------- */
-
-@page {
-    size: A4;
-}
-
-@media print {
-    html {
-        font-size: 10.5pt;    /* 五号字体。打印时使用磅（pt）作为单位比较合适 */
     }
 }
 
@@ -590,4 +572,37 @@ sup.task-list {
 
 .task-list-done {
     text-decoration: line-through;
+}
+
+/* 设置图片格式 */
+
+img {
+    border: 1em solid transparent;
+}
+
+/* 输出PDF的设置
+-------------------------------------------------------- */
+
+@page {
+    size: A4;
+}
+
+@media print {
+    html {
+        font-size: 10.5pt;    /* 五号字体。打印时使用磅（pt）作为单位比较合适 */
+    }
+    /* 输出PDF时，减小引用框border和二级标题下划线的宽度（因为屏幕和纸张不一样大，而这里的单位是px） */
+    blockquote {
+        margin: 1em 0 1em 1em;
+        padding-left: calc(1em - 1px);
+        border-left: 1px solid var(--special-color);
+    }
+    h2:after{
+        border-bottom: 0.5px solid #000000;
+        content: '';
+        width: 200px;
+        display: block;
+        margin: 0 auto 1em;
+        height: 1px;
+    }
 }
